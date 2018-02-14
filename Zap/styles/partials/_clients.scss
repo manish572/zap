@@ -1,0 +1,51 @@
+.clients .clients-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.client-nav {
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.client-nav a {
+    margin: 0 5px;
+}
+
+.client-nav img {
+    width: 100%;
+}
+
+
+.clients .clients-wrapper h5 {
+    width: 70%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 1.4rem;
+}
+
+.client-name {
+    text-align: center;
+}
+
+.client-name img {
+    padding: 30px 0;
+
+}
+
+.client-name h6 {
+    letter-spacing: 2px;
+}
+
+.clients .client-name p {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    color: rgb(111, 111, 111);
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+
+

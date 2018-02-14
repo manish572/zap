@@ -1,0 +1,143 @@
+.plans .section-header {
+    margin: 70px;
+}
+.plans .wrapper {
+    width: 70%;
+}
+
+.plans h3 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.plans span {
+    text-transform: none;
+    font-style: italic;
+    font-weight: 100;
+   color: rgb(111, 111, 111);
+}
+
+.plan-details {
+    display: flex;
+    margin: 50px 0;
+}
+.plan-detail {
+    width: 25%;
+    border: 1px solid rgb(217, 217, 217);
+    margin: 0 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(217, 217, 217);
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.plan-detail h4 {
+    padding: 20px 0;
+    font-size: 1.4rem;
+    color: rgb(48, 52, 56);
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.plan-detail ul {
+     padding: 0 20px;
+}
+
+.plan-detail li {
+    line-height: 50px;
+    list-style: none;
+   color: rgb(111, 111, 111);
+   font-weight: 500;
+   font-size: 1.2rem;
+
+}
+
+.plan-detail p {
+    font-style: italic;
+    font-family: 'Crimson Text';
+    padding-bottom: 20px;
+}
+
+.plan-detail span {
+    font-size: 5rem;
+    font-style: normal;
+    color: black;
+    
+}
+
+.special-option {
+    position: relative;
+}
+.special-option:after {
+    content: "\2714";
+    padding-left: 10px;
+    color: rgb(246, 177, 56);
+}
+
+span.currency {
+    vertical-align: top;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button.get-plan  {
+    text-transform: uppercase;
+    border: none;
+    background: black;
+    color: white;
+    margin: 20px;
+    display: none;
+    padding: 5% 12%;
+    position: absolute;
+    bottom: -10%;
+    left: 15%;
+}
+
+.get-plan a{
+    text-decoration: none;
+    color: white;
+}
+
+.get-plan a:hover {
+    text-decoration: underline;
+    color: rgb(246, 177, 56);
+}
+
+.plan-detail:hover > .get-plan {
+    display: block;
+}
+
+@media (max-width:1050px) {
+    .plan-details {
+        flex-wrap: wrap;
+    }
+
+    .plan-detail {
+        width: 45%;
+        margin-right: 10px;
+    }
+    
+    li {
+        line-height: 25px;
+    }
+}
+
+@media (max-width:600px) {
+    .plan-details {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .plan-detail {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    }
+}
+  @media (max-width:450px) {
+      .plan-detail {
+            width: 100%;
+        }
+    }

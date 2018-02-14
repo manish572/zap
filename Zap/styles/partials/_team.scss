@@ -1,0 +1,145 @@
+.team .section-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.team .section-header {
+    margin-bottom: 70px;
+}
+.members {
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.member {
+    width: 33%;
+    margin: 0px;
+    position: relative;
+}
+
+.member img {
+    width: 90%;
+   
+}
+
+.member-info {
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    color: white;
+}
+
+.member p {
+    font-family: 'Crimson';
+    font-style: italic;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+.member h6 {
+    padding: 0 10px;
+}
+.member-info::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: white;
+    top: -10px;
+}
+
+.team-info {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.team-info h2 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    margin: 5% 0;
+    letter-spacing: 2px;
+}
+
+.team-info p {
+    color: rgb(111, 111, 111);
+    line-height: 30px;
+}
+
+.crazy {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.join-banner {
+    width: 30%;
+    text-align: center;
+    margin: auto 0 auto 10%;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.join-banner h3 {
+    border: 1px solid black;
+    padding: 10%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: 0.3s all;
+        &:hover {
+        background: black;
+        color: white;
+    }
+}
+
+@media (max-width:950px) {
+    .team-info {
+        flex-direction: column;
+    }
+    .crazy {
+        text-align: center;
+        width: 100%;
+    }
+    .join-banner {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:870px) {
+    .join-banner {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .join-banner h3 {
+        padding: 10px;
+    }
+
+
+
+}
+
+@media (max-width:790px) {
+  .join-banner {
+        width: 40%;
+    }
+    .member-info h6 {
+        font-size: 1rem;
+    }
+    .member-info p {
+        font-size: 0.8rem;
+    }
+
+        .members {
+        flex-direction: column;
+    }
+    .member {
+        width: 50%;
+        margin-bottom: 20px;
+    
+    }
+}
+

@@ -1,0 +1,218 @@
+.hero {
+    background-image: url(../images/background.png);
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    }
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0;
+}
+
+.navigation img {
+    align-self: flex-start;
+    margin-right: 12%;
+}
+
+.nav-main {
+    flex-grow: 1;
+}
+
+.nav-main ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 30px 0;
+    margin: 0;
+}
+
+.nav-main li {
+    padding: 0 10px;
+    font-size: 1.6rem;
+}
+
+.nav-main a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        padding-bottom: 5px;
+        border-bottom: 2px solid white;
+    }
+}
+
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero p,
+.hero button {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.heading button {
+    width: 60px;
+    margin: auto;
+    margin-bottom: 250px;
+    text-align: center;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 20px;
+    margin-top: 50px;
+    background: transparent;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    color: white;
+    transition: 0.3s;
+    &:hover {
+        background: white;
+        color: gray;
+    }
+}
+
+
+.hero h1 {
+    padding-top: 100px;
+}
+.hero p {
+    padding: 20px 0;
+}
+
+
+
+@media (max-width:900px) {
+   .navigation img {
+        align-self: flex-start;
+        margin-right: 2%;
+    }
+}
+
+@media (max-width:750px) {
+    .hero .navigation {
+        flex-direction: column;
+    }
+    .navigation img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:700px) {
+    .hero .heading{
+         h1 {
+        font-size: 45px;
+        }
+        h2 {
+            font-size: 90px;
+        }
+    }
+}
+
+@media (min-width:500px) {
+    .nav,
+    input,
+    label {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+    .hero .heading{
+         h1 {
+        font-size: 35px;
+        letter-spacing: -2px;
+        }
+        h2 {
+            font-size: 70px;
+            letter-spacing: -2px;
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .hero .heading{
+         h1 {
+        font-size: 25px;
+        letter-spacing: -2px;
+        line-height: 20px;
+        }
+        h2 {
+            font-size: 50px;
+            letter-spacing: -2px;
+        }
+    }
+
+}
+
+
+// HAMBURGER MENU
+
+@media (max-width:500px) {
+    .nav-main {
+        display: none;
+    }
+
+
+    ul.nav {
+	background: rgba(20, 20, 20, 1);
+	list-style: none;
+	padding: 0;
+	position: fixed;
+	z-index: 2;
+	width: 50%; 
+	right: -50%; 
+	top: 0;
+	margin: 0;
+	transition: all 0.5s; 
+}
+ul.nav li {
+    color: white;
+    text-transform: uppercase;
+    
+
+}
+ul.nav a {
+	border-bottom: 0.5px solid rgba(rgb(111, 111, 111), 0.5);
+    display: block;
+    font-family: 'Montserrat';
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+	padding: 20px;
+    text-align: center;
+}
+
+ul.nav a:hover {
+    text-decoration: underline;
+    color: rgb(246, 177, 56);
+
+}
+
+input#toggle:checked + ul.nav {
+	right: 0;  
+}
+input#toggle:checked ~ .wrapper {
+	left: -30%; 
+}
+
+input#toggle {
+	display: none;  
+}
+
+label[for="toggle"] {
+	position: fixed;
+	top: 3%;
+	left: 8%;
+	color: rgb(246, 177, 56);
+    }
+}

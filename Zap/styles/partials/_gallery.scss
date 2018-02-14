@@ -1,0 +1,45 @@
+.gallery-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    li {
+        border: 1px solid lightgray;
+        padding: 10px 20px;
+        margin: 30px 15px;
+        text-align: center;
+    }
+    
+}
+
+.gallery .image-gallery {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+
+    img {
+        width: 25%;
+    }
+}
+
+@media (max-width:850px) {
+    .gallery-nav ul li {
+        padding: 10px;
+        margin: 10px;
+    }
+    .image-gallery .img-hide {
+        display: none;
+    }
+
+}
+
+@media (max-width:550px) {
+     .gallery-nav ul {
+     flex-direction: column;
+    }
+   .gallery .image-gallery img {
+            width: 50%;
+        }
+}

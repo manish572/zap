@@ -1,0 +1,237 @@
+.quote {
+    display: flex;
+    background: rgb(50, 50, 50);
+    padding: 50px 0;
+    // color:white;
+    font-size: 30px;
+}
+
+.quote .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.qoute .wrapper p {
+    width: 60%;
+}
+
+.quote-btn {
+    color: white;
+    background: rgb(238, 176, 19);
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.quote-btn h3 {
+    padding: 10px 25px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.quote h5 {
+    color: white;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.quote span {
+    color: rgb(238, 176, 19);
+}
+
+.blogs .section-header {
+    margin: 70px 0;
+}
+
+.blog-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog {
+    width: 50%;
+    display: flex;
+}
+
+.blog-info {
+    position: relative;
+}
+
+.bg1:before,
+.bg2:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12.5px 25px 12.5px 0;
+    border-color: transparent #dcdfe3 transparent transparent;
+    position: absolute;
+    top: 50%;
+    left: -25px
+}
+
+.bg3:before,
+.bg4:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12.5px 0 12.5px 25px;
+    border-color: transparent transparent transparent #dcdfe3;
+    position: absolute;
+    top: 50%;
+    right: -25px
+}
+
+
+ .blog:nth-child(3) .blog-info,
+  .blog:nth-child(4) .blog-info{
+        order: -1;
+    }
+
+
+.blogimage {
+    width: 50%;
+    height: 100%; 
+}
+
+.blogimage-one {
+    background-image: url(../images/blogimage-one.png);
+    background-size: cover;
+}
+.blogimage-two {
+    background-image: url(../images/blogimage-two.png);
+    background-size: cover;
+}
+.blogimage-three {
+    background-image: url(../images/blogimage-three.png);
+    background-size: cover;
+}
+.blogimage-four {
+    background-image: url(../images/blogimage-four.png);
+    background-size: cover;
+}
+
+.blog-info {
+    width: 50%;
+    background: rgb(234, 234, 234);
+    padding: 20px;
+}
+
+.blog-info h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.blog-info p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(111, 111, 111);
+    line-height: 25px;
+    padding-bottom: 40px;
+}
+
+.blog-info a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+@media(max-width:1000px) {
+    .quote .wrapper {
+        flex-direction: column;
+        align-items: center;
+        h5 {
+            text-align: center;
+        }
+    }
+    .quote-btn {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:880px) {
+    .blog {
+        width: 100%;
+    }
+  .blog:nth-child(2) .blog-info,
+  {
+        order: -1;
+    }
+     .blog:nth-child(3) .blog-info {
+         order: 1;
+     }
+    .bg2:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12.5px 0 12.5px 25px;
+        border-color: transparent transparent transparent #dcdfe3;
+        position: absolute;
+        top: 50%;
+        right: -25px
+        }
+        .bg3:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12.5px 25px 12.5px 0;
+        border-color: transparent #dcdfe3 transparent transparent;
+        position: absolute;
+        top: 50%;
+        left: -25px
+    }
+
+   
+}
+
+@media (max-width:500px) {
+    .blog {
+        flex-direction: column;
+        align-items: flex-start;
+        .blogimage {
+            width: 100%;
+            height: 250px;
+        }
+        .blog-info {
+            width: 100%;
+        }
+    }
+     .blog:nth-child(2) .blog-info
+        {
+        order: 0;
+        }
+        .blog:nth-child(4) .blog-info
+        {
+        order: 0;
+        }
+       
+        .bg1:before,
+        .bg2:before,
+        .bg3:before,
+        .bg4:before
+        {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 12.5px 25px 12.5px;
+            border-color: transparent transparent #dcdfe3 transparent;
+            position: absolute;
+            top: -24px;
+            left: 45%;
+            }
+
+         
+    }
+
+
+
+    
+    

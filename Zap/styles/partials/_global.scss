@@ -1,0 +1,109 @@
+/* GLOBAL STYLES */
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat';
+    font-weight: 400;
+ 
+}
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    color: rgb(111, 111, 111);
+    font-size: 1.2rem;
+}
+li {
+    font-size: 1.2rem;
+}
+
+.section-wrapper {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+h1,
+.special {
+    font-weight: 700;
+    line-height: 85px;
+    letter-spacing: -4px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+.special {
+        font-size: 120px;
+    }
+
+p {
+    font-size: 1.4rem;
+}
+
+ .section-header {
+    text-align: center;
+}
+.section-header h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.hammer {
+    display: flex;
+    justify-content: center;
+}
+.hammer img {
+    margin: 0 10px 0 10px;
+}
+
+ .hammer::before {
+    content: '';
+    width: 55px;
+    height: 2px;
+    position: relative;
+    background: lightgray;
+    top: 25px;
+}
+
+ .hammer::after {
+    content: '';
+    width: 55px;
+    height: 2px;
+    position: relative;
+    background: lightgray;
+    top: 25px;
+}
+
+.section-header img {
+    padding: 15px 0;
+}
+
+h6 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+@media (max-width:900px) {
+    .section-wrapper {
+        width: 90%;
+    }
+}
